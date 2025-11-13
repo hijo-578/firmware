@@ -138,4 +138,8 @@ extern const uint8_t irIcon[];
 #define IR_ICON_WIDTH 16
 #define IR_ICON_HEIGHT 16
 
+// Snake Game icon bitmap
+extern const uint8_t snakeIcon[];
+#define SNAKE_ICON_WIDTH 16
+#define SNAKE_ICON_HEIGHT 16
 #endif // BITMAPS_H

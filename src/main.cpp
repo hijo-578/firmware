@@ -28,6 +28,7 @@
 #include "apps/CC1101Application.h"
 #include "apps/BinaryCalculatorApplication.h"
 #include "apps/IRTVOffApplication.h"
+#include "apps/SnakeGameApplication.h"
 #include "graphics/bitmaps.h"
 #include <EEPROM.h>
 
@@ -66,6 +67,7 @@ ButtonTestApplication buttonTestApplication;
 CC1101Application cc1101Application;
 BinaryCalculatorApplication binaryCalculatorApplication;
 IRTVOffApplication irTVOffApplication;
+SnakeGameApplication snakeGameApplication;
 
 void setup() {
      // Initialize serial communication for debugging
@@ -107,6 +109,7 @@ void setup() {
     appManager.registerApplication(&cc1101Application);
     appManager.registerApplication(&binaryCalculatorApplication);
     appManager.registerApplication(&irTVOffApplication);
+    appManager.registerApplication(&snakeGameApplication);
     
     // Initialize application manager
     appManager.initialize(&display, &navigation);
